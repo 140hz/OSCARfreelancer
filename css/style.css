@@ -10,7 +10,13 @@
 }
 
 html{
+    background-color: var(--secundario);
+    color: var(--blanco);
     font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
 }
 body{
     font-family: grotesk;
@@ -53,4 +59,17 @@ img{
 }
 .nav-main a:hover{
     background-color: var(--secundario);
+}
+.hero{
+
+    background-image: url(/images/soprano.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55rem;
+    padding: 2rem;
+    text-align: center;
+    position: relative; /*este va primero--padre*/
+}
+.contenido-hero{
+    position: absolute; /*este va despues*/
 }
