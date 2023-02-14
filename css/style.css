@@ -22,6 +22,9 @@ body{
     font-family: grotesk;
     font-size: 16px;
 }
+#audio{
+    display: none;
+}
 .contenedor{
     max-width: 120rem;
     margin: 0 auto;
