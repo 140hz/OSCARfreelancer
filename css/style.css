@@ -16,8 +16,18 @@ html {
     background-color: var(--secundario);
     color: var(--blanco);
     font-size: 62.5%;
-    box-sizing: border-box;
-    /*hack para model box*/
+    box-sizing: border-box; /*hack para model box*/
+    scroll-snap-type: y mandatory;
+}
+
+/* scroll snap*/
+
+.servicios, 
+.nav-main,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+
 }
 
 *,
@@ -207,6 +217,7 @@ h3 {
     display: flex;
     align-items: flex-end;
 }
+
 
 /*servicios*/
 .servicios {
